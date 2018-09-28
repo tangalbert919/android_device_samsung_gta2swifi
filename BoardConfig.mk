@@ -16,11 +16,16 @@
 
 TARGET_OTA_ASSERT_DEVICE := gta2swifi
 
+# Inherit from common
+-include device/samsung/qcom-common/BoardConfigCommon.mk
+
 # Bootloader
+BOARD_PROVIDES_BOOTLOADER_MESSAGE := false
 TARGET_BOOTLOADER_BOARD_NAME := MSM8937
 
 # Platform
 TARGET_BOARD_PLATFORM := msm8937
+TARGET_BOARD_PLATFORM_GPU := qcom-adreno308
 
 # Architecture
 TARGET_ARCH := arm64
@@ -37,5 +42,77 @@ TARGET_CPU_VARIANT := cortex-a53
 
 TARGET_USES_64_BIT_BINDER := true
 
+# ANT+
+BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
+
+# ART
+WITH_DEXPREOPT := false
+WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY := true
+
+# Audio
+
+# Mixer paths
+
+# XML Audio configuration files
+
+# Bluetooth
+
+# Camera
+
+# Charger
+
+# LineageHW
+
+# Display
+
+# Encryption
+
+# Filesystems
+
+# FM
+
+# GPS
+
+# Healthd
+
+# Init
+TARGET_INIT_VENDOR_LIB := libinit_msm8917
+TARGET_RECOVERY_DEVICE_MODULES := libinit_msm8917
+
+# Kernel
+
+# Malloc implementation
+MALLOC_SVELTE := true
+
+# Media
+TARGET_QCOM_MEDIA_VARIANT := caf
+
+# NFC
+BOARD_NFC_HAL_SUFFIC := msm8917
+
+# Partition Sizes
+
+# Power
+TARGET_POWERHAL_VARIANT := qcom
+CM_POWERHAL_EXTENSION := qcom
+WITH_QC_PERF := true
+
 # Qualcomm support
 BOARD_USES_QCOM_HARDWARE := true
+
+# Recovery
+
+# Recovery - TWRP
+
+# SELinux
+include device/qcom/sepolicy/sepolicy.mk
+include device/qcom/sepolicy/legacy-sepolicy.mk
+
+# Shims
+
+# Time services
+BOARD_USES_QC_TIME_SERVICES := true
+
+# Vold
+
+# Wifi
