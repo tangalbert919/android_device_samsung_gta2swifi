@@ -35,7 +35,7 @@ TARGET_CPU_ABI2 :=
 TARGET_CPU_VARIANT := cortex-a53
 
 TARGET_2ND_ARCH := arm
-TARGET_2ND_ARCH_VARIANT := armv8a
+TARGET_2ND_ARCH_VARIANT := armv8-a
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_CPU_VARIANT := cortex-a53
@@ -74,12 +74,17 @@ WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY := true
 # GPS
 
 # Healthd
+BOARD_HAL_STATIS_LIBRARIES := libhealthd.lineage
 
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_msm8917
 TARGET_RECOVERY_DEVICE_MODULES := libinit_msm8917
 
 # Kernel
+TARGET_KERNEL_CONFIG := msm8917_sec_defconfig
+TARGET_KERNEL_SELINUX_CONFIG := selinux_defconfig
+TARGET_KERNEL_SELINUX_LOG_CONFIG := selinux_log_defconfig
+TARGET_KERNEL_SEOUCE := kernel/samsung/msm8917
 
 # Malloc implementation
 MALLOC_SVELTE := true
