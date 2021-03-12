@@ -15,3 +15,6 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lineage_gta2swifi.mk
+
+COMMON_LUNCH_CHOICES := \
+    lineage_gta2swifi-userdebug
