@@ -1,3 +1,3 @@
 for i in eng userdebug user; do
-	add_lunch_combo lineage_gta2wifi-${i}
+	COMMON_LUNCH_CHOICES lineage_gta2wifi-${i}
 done
