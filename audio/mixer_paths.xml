@@ -1155,6 +1155,26 @@
         <ctl name="ADC1 Volume" value="6" />
     </path>
 
+    <path name="camcorder-main-mic">
+    	<path name="sub-mic" />
+        <ctl name="DEC1 Volume" value="80" />
+        <ctl name="ADC3 Volume" value="6" />
+    </path>
+
+    <path name="camcorder-sub-mic">
+        <path name="sub-mic" />
+        <ctl name="DEC1 Volume" value="81" />
+        <ctl name="ADC3 Volume" value="6" />
+    </path>
+
+    <path name="camcorder-stereo-mic">
+        <path name="sub-main-mic" />
+        <ctl name="DEC1 Volume" value="83" />
+        <ctl name="ADC3 Volume" value="5" />
+        <ctl name="DEC2 Volume" value="83" />
+        <ctl name="ADC1 Volume" value="5" />
+    </path>
+
     <path name="echo-main-mic">
         <path name="sub-mic" />
         <ctl name="DEC1 Volume" value="81" />
