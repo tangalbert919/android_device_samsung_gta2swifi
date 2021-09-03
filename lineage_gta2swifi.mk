@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018 The LineageOS Project
+# Copyright (C) 2018-2021 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-$(call inherit-product, device/samsung/gt58wifi/device.mk)
+$(call inherit-product, device/samsung/gta2swifi/device.mk)
 
 $(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
 
