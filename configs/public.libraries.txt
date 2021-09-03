@@ -1,0 +1,17 @@
+libOpenCL.so
+libOpenCv.camera.samsung.so
+libSDKRecognitionText.so
+libSEF.so
+lib_AnimationEngine_O.so
+libadsprpc.so
+libcdsprpc.so
+libfastcvopt.so
+libnpu.so
+libqti-perfd-client.so
+libremotedesktop_client.knox.samsung.so
+libsdsprpc.so
+libsnap_caffe.so
+libsomp.camera.samsung.so
+libtmdisplay.so
+libvideoeditor_O_zf.so
+libvideoeditor_jni_O_zf.so
