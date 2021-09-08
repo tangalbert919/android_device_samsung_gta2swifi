@@ -158,6 +158,9 @@ BOARD_SECCOMP_POLICY := $(DEVICE_PATH)/seccomp
 # NFC
 #BOARD_NFC_HAL_SUFFIC := msm8917
 
+# Properties
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+
 # Qualcomm support
 BOARD_USES_QCOM_HARDWARE := true
 
