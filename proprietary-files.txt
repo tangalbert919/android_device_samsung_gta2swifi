@@ -115,7 +115,6 @@ lib/libsecimaging.camera.samsung.so
 lib/libsecjpeginterface.camera.samsung.so
 lib/libsecjpegquram.so
 lib/libsemcamera_jni.camera.samsung.so
-vendor/lib/hw/camera.msm8937.so
 vendor/lib/camera.device@1.0-impl.so
 vendor/lib/camera.device@3.2-impl.so
 vendor/lib/camera.device@3.3-impl.so
@@ -134,7 +133,6 @@ vendor/lib/libmmqjpeg_codec.so
 vendor/lib/libqomx_jpegdec.so
 vendor/lib/libqomx_jpegenc.so
 vendor/lib/libqomx_jpegenc_pipe.so
-vendor/lib/libsechelper_engine.so
 vendor/lib/libsecpkcs11_engine.so
 vendor/lib/libswvdec.so
 vendor/lib/libvideoutils.so
@@ -658,37 +656,13 @@ vendor/lib/libOmxG711Dec.so
 vendor/lib/libOmxQcelp13Dec.so
 vendor/lib/libOmxVpp.so
 vendor/lib/libOmxWmaDec.so
-vendor/lib/libstagefright_amrnb_common.so
 vendor/lib/libstagefright_bufferqueue_helper_vendor.so
-vendor/lib/libstagefright_enc_common.so
-vendor/lib/libstagefright_flacdec.so
 vendor/lib/libstagefright_omx_vendor.so
-vendor/lib/libstagefright_soft_aacdec.so
-vendor/lib/libstagefright_soft_aacenc.so
-vendor/lib/libstagefright_soft_ac4dec.so
-vendor/lib/libstagefright_soft_amrdec.so
-vendor/lib/libstagefright_soft_amrnbenc.so
-vendor/lib/libstagefright_soft_amrwbenc.so
-vendor/lib/libstagefright_soft_avcdec.so
-vendor/lib/libstagefright_soft_avcenc.so
-vendor/lib/libstagefright_soft_ddpdec.so
-vendor/lib/libstagefright_soft_flacdec.so
-vendor/lib/libstagefright_soft_flacenc.so
 vendor/lib/libstagefright_soft_g711dec.so
-vendor/lib/libstagefright_soft_gsmdec.so
-vendor/lib/libstagefright_soft_hevcdec.so
-vendor/lib/libstagefright_soft_mp3dec.so
-vendor/lib/libstagefright_soft_mpeg2dec.so
-vendor/lib/libstagefright_soft_mpeg4dec.so
-vendor/lib/libstagefright_soft_mpeg4enc.so
 vendor/lib/libstagefright_soft_opusdec.so
 vendor/lib/libstagefright_soft_qtiflacdec.so
 vendor/lib/libstagefright_soft_rawdec.so
 vendor/lib/libstagefright_soft_vorbisdec.so
-vendor/lib/libstagefright_soft_vpxdec.so
-vendor/lib/libstagefright_soft_vpxenc.so
-vendor/lib/libstagefright_softomx.so
-vendor/lib/libstagefright_softomx_plugin.so
 vendor/lib/libvpplibrary.so
 vendor/lib/libvpptestutils.so
 vendor/lib/libvqzip.so
@@ -709,9 +683,6 @@ vendor/lib/libOmxSwVencMpeg4.so
 vendor/lib/libOmxVdec.so
 vendor/lib/libOmxVenc.so
 vendor/lib/libstagefrighthw.so
-
-# NFC
-vendor/firmware/nfc/libpn553_fw.so
 
 # Perf
 vendor/bin/hw/vendor.qti.hardware.perf@1.0-service
@@ -770,12 +741,9 @@ vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc
 vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so
 
 # Radio
-etc/permissions/embms.xml
 etc/permissions/privapp-permissions-qti.xml
-etc/permissions/qcrilhook.xml
 etc/sysconfig/qti_whitelist.xml
 framework/embmslibrary.jar
-framework/qcrilhook.jar
 vendor/bin/ATFWD-daemon
 vendor/bin/netmgrd
 vendor/bin/rmt_storage
@@ -784,7 +752,6 @@ vendor/etc/data/dsi_config.xml
 vendor/etc/data/netmgr_config.xml
 vendor/lib/libconfigdb.so
 vendor/lib/libdsi_netctrl.so
-vendor/lib/liblqe.so
 vendor/lib/libmdmdetect.so
 vendor/lib/libnetmgr.so
 vendor/lib/libnetmgr_common.so
@@ -850,7 +817,6 @@ vendor/lib/libremotedesktop_client.knox.samsung.so
 vendor/lib/libsmart_cropping.camera.samsung.so
 vendor/lib/libsomp.camera.samsung.so
 vendor/lib/libxcv.camera.samsung.so
-vendor/lib/lib_SamsungRec_06005.so
 vendor/lib/lib_soundaliveresampler.so
 vendor/lib/lib_SoundAlive_3DPosition_ver202.so
 vendor/lib/lib_SoundAlive_SRC384_ver320.so
@@ -869,8 +835,6 @@ vendor/lib/vendor.samsung.hardware.camera.provider@2.4.so
 vendor/lib/vendor.samsung.hardware.camera.provider@2.5.so
 vendor/lib/vendor.samsung.hardware.exthealth@1.0.so
 vendor/lib/vendor.samsung.hardware.miscpower@1.0.so
-vendor/lib/vendor.samsung.hardware.radio.channel@1.0_vendor.so
-vendor/lib/vendor.samsung.hardware.radio.configsvc@1.0_vendor.so
 vendor/lib/vendor.samsung.hardware.radio.secbridge@1.0_vendor.so
 vendor/lib/vendor.samsung.hardware.radio.sechook@1.0_vendor.so
 vendor/lib/vendor.samsung.hardware.radio@1.2_vendor.so
@@ -932,14 +896,10 @@ vendor/lib/vendor.qti.voiceprint@1.0.so
 vendor/lib/libhdcpsrm.so
 
 # WiFi
-vendor/bin/cnss-daemon
 vendor/bin/cnss_diag
-vendor/bin/wlandutservice
 
 # rootdir
 vendor/bin/adpl
-vendor/bin/ipacm-diag
-vendor/bin/ptt_socket_app
 
 # Misc
 vendor/bin/athdiag
@@ -959,7 +919,6 @@ vendor/bin/mm-qjpeg-dec-test
 vendor/bin/mm-qjpeg-enc-test
 vendor/bin/mm-qomx-idec-test
 vendor/bin/mm-qomx-ienc-test
-vendor/bin/pktlogconf
 vendor/bin/PktRspTest
 vendor/bin/pm_proxy_helper
 vendor/bin/qjpeg-dma-test
