@@ -288,6 +288,15 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
 
+# RIL
+PRODUCT_PACKAGES += \
+    vendor.samsung.hardware.radio@1.2.vendor \
+    libjson \
+    librmnetctl \
+    libxml2 \
+    libprotobuf-cpp-full \
+    libshims_ril
+
 # Seccomp
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
