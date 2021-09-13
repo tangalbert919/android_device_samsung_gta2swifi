@@ -13,9 +13,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n.mk)
+
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 LOCAL_PATH := device/samsung/gta2swifi
+
+PRODUCT_CHARACTERISTICS := tablet
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
@@ -313,7 +318,6 @@ PRODUCT_PACKAGES += \
 
 # Treble
 PRODUCT_USE_VNDK_OVERRIDE := false
-PRODUCT_SHIPPING_API_LEVEL := 25
 PRODUCT_VENDOR_MOVE_ENABLED := false
 
 # USB
