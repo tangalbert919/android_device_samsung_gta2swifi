@@ -1,5 +1,4 @@
 # Device tree for Samsung Galaxy Tab A 8.0" (2017) (Wi-Fi only)
-=============
 
 Feature | Specs
 -------:|:---------
