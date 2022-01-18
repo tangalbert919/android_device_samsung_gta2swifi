@@ -53,14 +53,18 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset $(BOARD_RAMDISK_OFFSET) --tags_offset $
 # TODO: Move away from prebuilt kernel
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/zImage-dtb
 BOARD_KERNEL_IMAGE_NAME := zImage-dtb
-TARGET_KERNEL_ARCH := arm
-TARGET_KERNEL_HEADER_ARCH := arm
-TARGET_KERNEL_SOURCE := kernel/samsung/gta2swifi
-TARGET_KERNEL_CONFIG := gta2swifi_sea_open_defconfig
+#TARGET_KERNEL_ARCH := arm
+#TARGET_KERNEL_HEADER_ARCH := arm
+#TARGET_KERNEL_SOURCE := kernel/samsung/gta2swifi
+#TARGET_KERNEL_CONFIG := gta2swifi_sea_open_defconfig
 
 # Platform
 TARGET_BOARD_PLATFORM := msm8937
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno308
+
+# Recovery fstab and init.rc files
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery.fstab
+TARGET_RECOVERY_DEVICE_DIRS += $(DEVICE_PATH)
 
 # Hack: prevent anti rollback
 PLATFORM_SECURITY_PATCH := 2099-12-31
