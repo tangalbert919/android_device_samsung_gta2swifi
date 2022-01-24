@@ -18,6 +18,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n.mk)
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
+$(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
+
 LOCAL_PATH := device/samsung/gta2swifi
 
 PRODUCT_CHARACTERISTICS := tablet

@@ -36,12 +36,6 @@ vendor.voice.record.conc.disabled=false
 vendor.voice.voip.conc.disabled=true
 
 # Dalvik
-dalvik.vm.heapgrowthlimit=256m
-dalvik.vm.heapmaxfree=8m
-dalvik.vm.heapminfree=2m
-dalvik.vm.heapsize=512m
-dalvik.vm.heapstartsize=8m
-dalvik.vm.heaptargetutilization=0.75
 ro.dalvik.vm.native.bridge=0
 
 # Display
