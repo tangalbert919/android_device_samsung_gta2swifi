@@ -120,7 +120,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/camera/Y13QL_s5k3l2xx_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/Y13QL_s5k3l2xx_chromatix.xml
 
 # gta2swifi camera
-PRODUCT_COPE_FILES += \
+PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/camera/msm8917_camera_gta2s.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/msm8917_camera_gta2s.xml
 
 # Configstore
